@@ -22,4 +22,5 @@ jobs:
           key: cache-39faf38
 
       - name: prime-cache-39faf38
-        run: "echo 'Cache result: ${{ steps.cache.outputs.cache-hit }}'"
+        run: |
+              echo 'Cache result: ${{ steps.cache.outputs.cache-hit }}'
